@@ -46,6 +46,6 @@ def inbound_call():
         # Log and send request to Vapi with default handling
         response = requests.post('https://api.vapi.ai/call/phone', json=response_payload)
         return jsonify({"status": "success", "response": response.json()})
-
-if __name__ == '__main__':
-    app.run(port=5000)
+        
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
