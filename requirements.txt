@@ -1,6 +1,6 @@
-streamlit
 flask
 pandas
 requests
 python-dotenv
 twilio
+json
